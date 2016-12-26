@@ -1,4 +1,6 @@
 .sass-cache
 node_modules
 bower_components
+config.codekit3
+config.codekit
 # dist
