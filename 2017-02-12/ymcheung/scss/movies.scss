@@ -1,0 +1,161 @@
+// Normalize
+@import 'normalize';
+
+
+// Colors
+$white: rgba( 245, 245, 250, 1);
+
+$dim-red: rgba( 70, 10, 15, 1);
+$medium-gray: rgba( 62, 60, 60, 1);
+$dim-gray: rgba( 32, 32, 35, 1);
+
+
+// Icons
+@import 'icons';
+
+// Buttons
+@import 'buttons';
+
+
+// 
+// Typography
+// 
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+// Default Font
+body 
+{
+	font-family: 'Oxygen', '思源黑體', 'PingFangTC-Regular', '微軟正黑體', sans-serif;
+}
+
+
+
+
+// 
+// Layout
+// 
+body 
+{
+	color: $white;
+	background-color: $medium-gray;
+}
+
+header,
+.content
+{
+	display: flex;
+}
+
+
+// Header
+header
+{
+	justify-content: space-between;
+	align-items: center;
+	height: 12vh;
+}
+
+$headerSideWidth: calc( 12vw + 22px);
+// $headerNameWidth: calc( 100vw - $headerSideWidth*2);
+
+.goBack
+{
+	flex-basis: $headerSideWidth;
+	text-align: right;
+}
+
+.pageTitle
+{
+	flex-basis: auto;
+	text-align: center;
+}
+
+.goSearch
+{
+	flex-basis: $headerSideWidth;
+	text-align: left;
+}
+
+
+
+
+// Content
+.content 
+{
+	position: relative;
+	height: 75vh;
+	padding: 0 12vw;
+}
+
+.theMovie
+{
+	width: 100%;
+	overflow: hidden;
+	border-radius: .5rem;
+	box-shadow: 0 8px 4px -4px rgba(0,0,0,0.5);
+}
+
+.moviePoster
+{
+	height: 70%;
+	background-image: url('../assets/cover/categoryPreview.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+.movieShortIntro
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 30%;
+	background-color: $white;
+}
+
+.movieName
+{
+	margin: 0 0 .5rem;
+	padding-top: 1rem;
+	color: $dim-red;
+	font-size: 1.125rem;
+}
+
+.movieTime
+{
+	color: $dim-gray;
+	font-size: .875rem;
+}
+
+.movieName,
+.movieTime
+{
+	text-align: center;
+}
+
+
+// Footer
+footer 
+{
+	height: 10vh;
+	padding-top: 1rem;
+}
+
+.pageNavigator
+{
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+
+.pageNavItem
+{
+	list-style: none;
+	a 
+	{
+		margin: 0 .25rem;
+		color: $white;
+		opacity: .6;
+		font-size: 1.25rem;
+		text-decoration: none;
+	}
+}
