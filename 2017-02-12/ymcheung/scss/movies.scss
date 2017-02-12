@@ -28,6 +28,18 @@ body
 	font-family: 'Oxygen', '思源黑體', 'PingFangTC-Regular', '微軟正黑體', sans-serif;
 }
 
+// Animations
+@keyframes onLoadTrans 
+{
+    0% 
+    {
+        opacity: 0;
+    }
+    100% 
+    {
+        opacity: 1;
+    }
+}
 
 
 
@@ -81,7 +93,8 @@ $headerSideWidth: calc( 12vw + 22px);
 {
 	a 
 	{
-		display: block;
+		display: inline-block;
+		margin-right: -4px;
 	}
 }
 
@@ -100,8 +113,9 @@ $headerSideWidth: calc( 12vw + 22px);
 	width: 100%;
 	overflow: hidden;
 	border-radius: .5rem;
-	box-shadow: 0 8px 4px -4px rgba(0,0,0,0.5);
+	box-shadow: 0 8px 4px -4px rgba(0,0,0,0.36);
 }
+
 
 .moviePoster
 {
@@ -124,7 +138,7 @@ $headerSideWidth: calc( 12vw + 22px);
 {
 	margin: 0 0 .5rem;
 	padding-top: 1rem;
-	color: $dim-red;
+	color: $medium-gray;
 	font-size: 1.125rem;
 }
 

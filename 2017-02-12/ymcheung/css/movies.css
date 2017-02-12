@@ -445,6 +445,18 @@ template {
 body {
   font-family: 'Oxygen', '思源黑體', 'PingFangTC-Regular', '微軟正黑體', sans-serif; }
 
+@-webkit-keyframes onLoadTrans {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes onLoadTrans {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 body {
   color: #f5f5fa;
   background-color: #3e3c3c; }
@@ -479,6 +491,11 @@ header {
       flex-basis: calc( 12vw + 22px);
   text-align: left; }
 
+.goBack a,
+.goSearch a {
+  display: inline-block;
+  margin-right: -4px; }
+
 .content {
   position: relative;
   height: 75vh;
@@ -488,7 +505,7 @@ header {
   width: 100%;
   overflow: hidden;
   border-radius: .5rem;
-  box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.36); }
 
 .moviePoster {
   height: 70%;
@@ -513,7 +530,7 @@ header {
 .movieName {
   margin: 0 0 .5rem;
   padding-top: 1rem;
-  color: #460a0f;
+  color: #3e3c3c;
   font-size: 1.125rem; }
 
 .movieTime {
