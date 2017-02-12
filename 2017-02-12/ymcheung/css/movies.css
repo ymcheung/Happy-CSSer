@@ -438,9 +438,10 @@ template {
   width: 60%;
   margin: 0 auto;
   color: #f5f5fa;
+  text-decoration: none;
   text-align: center;
   background-color: #202023;
-  text-decoration: none; }
+  box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.2); }
 
 body {
   font-family: 'Oxygen', '思源黑體', 'PingFangTC-Regular', '微軟正黑體', sans-serif; }
@@ -484,6 +485,7 @@ header {
 .pageTitle {
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
+  font-size: 1rem;
   text-align: center; }
 
 .goSearch {
