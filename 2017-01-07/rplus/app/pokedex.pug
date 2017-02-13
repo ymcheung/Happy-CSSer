@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title Pokédex
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+  link(rel="stylesheet", href="pokedex.css")
+body
+  -
+    var state = {
+      themeColor: '#66c',
+      introItem: {
+        imgSrc: 'https://rawgit.com/Superviral/Pokemon-GO-App-Assets-and-Images/master/App%20Converted%20Images/pokestop_near.png',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam, faci!'
+      },
+      introducer: {
+        imgSrc: 'https://rawgit.com/Superviral/Pokemon-GO-App-Assets-and-Images/master/App%20Converted%20Images/Professor.png'
+      }
+    };
+
+  .app
+  .dialog(style=`
+    --dialog-themeColor: ${state.themeColor};
+    --introducer-imgSrc: url(${state.introducer.imgSrc})
+  `)
+    article.intro
+      .intro__item
+        if (state.introItem.imgSrc)
+          img(src=state.introItem.imgSrc)
+      .intro__content= state.introItem.description
